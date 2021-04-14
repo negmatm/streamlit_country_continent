@@ -31,9 +31,8 @@ if st.button("Submit your answer"):
         caching.clear_cache()
         st.write("This is correct!")
         st.balloons()
-    elif:
-        chosen_continent == "I don't know":
-            st.write("The answer is " + continent_of_random_country
+    elif chosen_continent == "I don't know":
+        st.write("The answer is: " + continent_of_random_country)
     else:
         st.warning("This is not correct.  Try again!")
 
