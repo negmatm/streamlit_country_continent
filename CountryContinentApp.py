@@ -26,9 +26,6 @@ st.title("Which continent is " + random_country + " in?")
 
 chosen_continent = st.radio("",("I don't know", "Africa", "Asia", "Europe", "Eurasia", "North America", "South America", "Oceania"))
 
-print("Continent chosen:", chosen_continent)
-print("Continent of random country: ", continent_of_random_country)
-
 if st.button("Submit your answer"):
     if chosen_continent == continent_of_random_country:
         caching.clear_cache()
