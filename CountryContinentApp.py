@@ -7,8 +7,7 @@ from streamlit import caching
 from streamlit.script_runner import RerunException
 from streamlit.script_request_queue import RerunData
 import requests
-from streamlit_folium import folium_static
-import folium
+import pydeck as pdk
 
 @st.cache
 def load_countries():
@@ -55,10 +54,10 @@ if game_option == "Continent":
 
     if st.button("Show me the map please!"):
 
-        m = folium.Map(location=[location_latitude, location_longitude], zoom_start=3.5)
-
-        # call to render Folium map in Streamlit
-        folium_static(m)
+        st.pydeck_chart(pdk.Deck(
+            map_style='mapbox://styles/mapbox/light-v9',
+            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=2.5)
+        ))
 
     if st.button("Another question please"):
         caching.clear_cache()
@@ -81,10 +80,10 @@ elif game_option == "Capital":
         st.write("The answer is: " + capital_of_random_country)
 
     if st.button("Show me the map please!"):
-        m = folium.Map(location=[location_latitude, location_longitude], zoom_start=6)
-
-        # call to render Folium map in Streamlit
-        folium_static(m)
+        st.pydeck_chart(pdk.Deck(
+            map_style='mapbox://styles/mapbox/light-v9',
+            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=6)
+        ))
 
     if st.button("Another question please"):
         caching.clear_cache()
