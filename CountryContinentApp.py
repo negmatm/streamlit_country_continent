@@ -53,13 +53,6 @@ if game_option == "Continent":
     if st.button("I don't know"):
         st.write("The answer is: " + continent_of_random_country)
 
-    if st.button("Show me the map please!"):
-
-        st.pydeck_chart(pdk.Deck(
-            map_style='mapbox://styles/mapbox/light-v9',
-            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=2.6)
-        ))
-
     if st.button("Another question please"):
         caching.clear_cache()
         raise RerunException(RerunData())
@@ -79,12 +72,6 @@ elif game_option == "Capital":
 
     if st.button("I don't know"):
         st.write("The answer is: " + capital_of_random_country)
-
-    if st.button("Show me the map please!"):
-        st.pydeck_chart(pdk.Deck(
-            map_style='mapbox://styles/mapbox/light-v9',
-            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=6)
-        ))
 
     if st.button("Another question please"):
         caching.clear_cache()
