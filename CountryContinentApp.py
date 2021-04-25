@@ -8,6 +8,7 @@ from streamlit.script_runner import RerunException
 from streamlit.script_request_queue import RerunData
 import requests
 import pydeck as pdk
+import numpy as np
 
 @st.cache
 def load_countries():
@@ -56,7 +57,7 @@ if game_option == "Continent":
 
         st.pydeck_chart(pdk.Deck(
             map_style='mapbox://styles/mapbox/light-v9',
-            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=2.5)
+            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=2.6)
         ))
 
     if st.button("Another question please"):
@@ -64,7 +65,7 @@ if game_option == "Continent":
         raise RerunException(RerunData())
 
 elif game_option == "Capital":
-    st.title("What is the capital of " + random_country + " ?")
+    st.title("What is the capital of " + random_country + "?")
 
     entered_capital = st.text_input("Enter Capital")
 
