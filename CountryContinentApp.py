@@ -1,4 +1,3 @@
-from numpy.lib.type_check import _nan_to_num_dispatcher
 import streamlit as st
 import pandas as pd
 import math
@@ -6,85 +5,102 @@ import random
 from streamlit import caching
 from streamlit.script_runner import RerunException
 from streamlit.script_request_queue import RerunData
-import requests
 import pydeck as pdk
 
 @st.cache
-def load_countries():
-    return pd.read_csv("Countries.csv")
+def load_country_details():
+    return pd.read_csv("CountriesExpanded.csv")
 
 @st.cache
-def get_random_country_continent():
-    random_number = math.floor((random.random()) * len(countries))
-    return list(countries.iloc[random_number])
+def get_random_row_from_file():
+    random_number = math.floor((random.random()) * len(country_details))
+    return list(country_details.iloc[random_number])
 
-countries = load_countries()
+country_details = load_country_details()
 
-random_country_continent = get_random_country_continent()
-random_country = random_country_continent[0]
-continent_of_random_country = random_country_continent[1]
-
-response = requests.get(f"https://restcountries.eu/rest/v2/name/{random_country}")
-
-capital_of_random_country = response.json()[0]["capital"]
-location = response.json()[0]["latlng"]
-location_latitude = location[0]
-location_longitude = location[1]
-
-game_option = st.sidebar.radio("Choose game option",("Continent", "Capital"))
+game_option = st.sidebar.radio("Choose game option",("Learn", "Quiz"))
 st.sidebar.title("About")
-st.sidebar.info("This app, which tests your knowledge of continents and capitals of countries, is maintained by Negmat Mullodzhanov")
+st.sidebar.info("This app helps you learn facts about world's countries and also tests your knowledge.  It is maintained by Negmat Mullodzhanov")
 
-if game_option == "Continent":
+if game_option == "Learn":
+    st.title("Learn Georgraphy!")
+    country = st.selectbox("Choose a country", list(country_details["country"]))
+    country_row = country_details[country_details["country"] == country]
 
-    st.title("Which continent is " + random_country + " in?")
+    continent = country_row["continent"].to_string(index = False)
+    capital = country_row["capital"].to_string(index = False)
+    latitude = float(country_row["latitude"])
+    longitude = float(country_row["longitude"])
+    flag_url = country_row["flag_url"].to_string(index = False)
 
-    chosen_continent = st.radio("",("Africa", "Asia", "Europe", "Eurasia", "North America", "South America", "Oceania"))
+    st.text("Continent: " + continent)
+    st.text("Capital: " + capital)
 
-    if st.button("Submit your answer"):
-        if chosen_continent == continent_of_random_country:
+    st.pydeck_chart(pdk.Deck(
+    map_style='mapbox://styles/mapbox/light-v9',
+    initial_view_state=pdk.ViewState(latitude=latitude,longitude=longitude,zoom=5)
+    ))
+
+if game_option == "Quiz":
+    random_row = get_random_row_from_file()
+    country = random_row[0]
+    continent = random_row[1]
+    capital = random_row[2]
+    latitude = random_row[3]
+    longitude = random_row[4]
+    flag_url = random_row[5]
+
+    quiz_option = st.radio("Choose quiz option",("Continent", "Capital"))
+
+    if quiz_option == "Continent":
+        st.subheader("What continent is " + country + " on ?")
+
+        chosen_continent = st.radio("",("Africa", "Asia", "Europe", "Eurasia", "North America", "South America", "Oceania"))
+
+        if st.button("Submit your answer"):
+            if chosen_continent == continent:
+                caching.clear_cache()
+                st.write("This is correct!")
+                st.balloons()
+            else:
+                st.warning("This is not correct.  Try again!")
+
+        if st.button("I don't know"):
+            st.write("The answer is: " + continent)
+
+        if st.button("Show me the map please!"):
+
+            st.pydeck_chart(pdk.Deck(
+                map_style='mapbox://styles/mapbox/light-v9',
+                initial_view_state=pdk.ViewState(latitude=latitude,longitude=longitude,zoom=2.5)
+            ))
+
+        if st.button("Another question please"):
             caching.clear_cache()
-            st.write("This is correct!")
-            st.balloons()
-        else:
-            st.warning("This is not correct.  Try again!")
+            raise RerunException(RerunData())
 
-    if st.button("I don't know"):
-        st.write("The answer is: " + continent_of_random_country)
+    elif quiz_option == "Capital":
+        st.subheader("What is the capital of " + country + "?")
 
-    if st.button("Show me the map please!"):
+        entered_capital = st.text_input("Enter Capital")
 
-        st.pydeck_chart(pdk.Deck(
-            map_style='mapbox://styles/mapbox/light-v9',
-            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=2.5)
-        ))
+        if st.button("Submit your answer"):
+            if entered_capital == capital:
+                caching.clear_cache()
+                st.write("This is correct!")
+                st.balloons()
+            else:
+                st.warning("This is not correct.  Try again!")
 
-    if st.button("Another question please"):
-        caching.clear_cache()
-        raise RerunException(RerunData())
+        if st.button("I don't know"):
+            st.write("The answer is: " + capital)
 
-elif game_option == "Capital":
-    st.title("What is the capital of " + random_country + "?")
+        if st.button("Show me the map please!"):
+            st.pydeck_chart(pdk.Deck(
+                map_style='mapbox://styles/mapbox/light-v9',
+                initial_view_state=pdk.ViewState(latitude=latitude,longitude=longitude,zoom=6)
+            ))
 
-    entered_capital = st.text_input("Enter Capital")
-
-    if st.button("Submit your answer"):
-        if entered_capital == capital_of_random_country:
+        if st.button("Another question please"):
             caching.clear_cache()
-            st.write("This is correct!")
-            st.balloons()
-        else:
-            st.warning("This is not correct.  Try again!")
-
-    if st.button("I don't know"):
-        st.write("The answer is: " + capital_of_random_country)
-
-    if st.button("Show me the map please!"):
-        st.pydeck_chart(pdk.Deck(
-            map_style='mapbox://styles/mapbox/light-v9',
-            initial_view_state=pdk.ViewState(latitude=location_latitude,longitude=location_longitude,zoom=6)
-        ))
-
-    if st.button("Another question please"):
-        caching.clear_cache()
-        raise RerunException(RerunData())
+            raise RerunException(RerunData())
