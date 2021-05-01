@@ -1,0 +1,209 @@
+country,continent,capital,latitude,longitude,flag_url
+Afghanistan,Asia,Kabul,33,65,https://restcountries.eu/data/afg.svg
+Albania,Europe,Tirana,41,20,https://restcountries.eu/data/alb.svg
+Algeria,Africa,Algiers,28,3,https://restcountries.eu/data/dza.svg
+Andorra,Europe,Andorra la Vella,42.5,1.5,https://restcountries.eu/data/and.svg
+Angola,Africa,Luanda,-12.5,18.5,https://restcountries.eu/data/ago.svg
+Anguilla,North America,The Valley,18.25,-63.16666666,https://restcountries.eu/data/aia.svg
+Antigua and Barbuda,North America,Saint John's,17.05,-61.8,https://restcountries.eu/data/atg.svg
+Argentina,South America,Buenos Aires,-34,-64,https://restcountries.eu/data/arg.svg
+Armenia,Asia,Yerevan,40,45,https://restcountries.eu/data/arm.svg
+Aruba,North America,Oranjestad,12.5,-69.96666666,https://restcountries.eu/data/abw.svg
+Australia,Oceania,Canberra,-27,133,https://restcountries.eu/data/aus.svg
+Austria,Europe,Vienna,47.33333333,13.33333333,https://restcountries.eu/data/aut.svg
+Azerbaijan,Asia,Baku,40.5,47.5,https://restcountries.eu/data/aze.svg
+Bahrain,Asia,Manama,26,50.55,https://restcountries.eu/data/bhr.svg
+Bangladesh,Asia,Dhaka,24,90,https://restcountries.eu/data/bgd.svg
+Barbados,North America,Bridgetown,13.16666666,-59.53333333,https://restcountries.eu/data/brb.svg
+Belarus,Europe,Minsk,53,28,https://restcountries.eu/data/blr.svg
+Belgium,Europe,Brussels,50.83333333,4,https://restcountries.eu/data/bel.svg
+Belize,North America,Belmopan,17.25,-88.75,https://restcountries.eu/data/blz.svg
+Benin,Africa,Porto-Novo,9.5,2.25,https://restcountries.eu/data/ben.svg
+Bermuda,North America,Hamilton,32.33333333,-64.75,https://restcountries.eu/data/bmu.svg
+Bhutan,Asia,Thimphu,27.5,90.5,https://restcountries.eu/data/btn.svg
+Bolivia,South America,Sucre,-17,-65,https://restcountries.eu/data/bol.svg
+Bonaire,North America,Kralendijk,12.15,-68.266667,https://restcountries.eu/data/bes.svg
+Bosnia and Herzegovina,Europe,Sarajevo,44,18,https://restcountries.eu/data/bih.svg
+Botswana,Africa,Gaborone,-22,24,https://restcountries.eu/data/bwa.svg
+Brazil,South America,Brasília,-10,-55,https://restcountries.eu/data/bra.svg
+Brunei,Asia,Bandar Seri Begawan,4.5,114.6666667,https://restcountries.eu/data/brn.svg
+Bulgaria,Europe,Sofia,43,25,https://restcountries.eu/data/bgr.svg
+Burkina Faso,Africa,Ouagadougou,13,-2,https://restcountries.eu/data/bfa.svg
+Burundi,Africa,Bujumbura,-3.5,30,https://restcountries.eu/data/bdi.svg
+Cambodia,Asia,Phnom Penh,13,105,https://restcountries.eu/data/khm.svg
+Cameroon,Africa,Yaoundé,6,12,https://restcountries.eu/data/cmr.svg
+Canada,North America,Ottawa,60,-95,https://restcountries.eu/data/can.svg
+Cayman Islands,North America,George Town,19.5,-80.5,https://restcountries.eu/data/cym.svg
+Central African Republic,Africa,Bangui,7,21,https://restcountries.eu/data/caf.svg
+Chad,Africa,N'Djamena,15,19,https://restcountries.eu/data/tcd.svg
+Chile,South America,Santiago,-30,-71,https://restcountries.eu/data/chl.svg
+China,Asia,Beijing,35,105,https://restcountries.eu/data/chn.svg
+Colombia,South America,Bogotá,4,-72,https://restcountries.eu/data/col.svg
+Comoros,Africa,Moroni,-12.16666666,44.25,https://restcountries.eu/data/com.svg
+Costa Rica,North America,San José,10,-84,https://restcountries.eu/data/cri.svg
+Croatia,Europe,Zagreb,45.16666666,15.5,https://restcountries.eu/data/hrv.svg
+Cuba,North America,Havana,21.5,-80,https://restcountries.eu/data/cub.svg
+Cyprus,Europe,Nicosia,35,33,https://restcountries.eu/data/cyp.svg
+Czech Republic,Europe,Prague,49.75,15.5,https://restcountries.eu/data/cze.svg
+Denmark,Europe,Copenhagen,56,10,https://restcountries.eu/data/dnk.svg
+Djibouti,Africa,Djibouti,11.5,43,https://restcountries.eu/data/dji.svg
+Dominica,North America,Roseau,15.41666666,-61.33333333,https://restcountries.eu/data/dma.svg
+Dominican Republic,North America,Santo Domingo,19,-70.66666666,https://restcountries.eu/data/dom.svg
+East Timor,Asia,Dili,-8.83333333,125.9166667,https://restcountries.eu/data/tls.svg
+Ecuador,South America,Quito,-2,-77.5,https://restcountries.eu/data/ecu.svg
+Egypt,Africa,Cairo,27,30,https://restcountries.eu/data/egy.svg
+El Salvador,North America,San Salvador,13.83333333,-88.91666666,https://restcountries.eu/data/slv.svg
+Equatorial Guinea,Africa,Malabo,2,10,https://restcountries.eu/data/gnq.svg
+Eritrea,Africa,Asmara,15,39,https://restcountries.eu/data/eri.svg
+Estonia,Europe,Tallinn,59,26,https://restcountries.eu/data/est.svg
+Ethiopia,Africa,Addis Ababa,8,38,https://restcountries.eu/data/eth.svg
+Falkland Islands,South America,Stanley,-51.75,-59,https://restcountries.eu/data/flk.svg
+Federated States of Micronesia,Oceania,Palikir,6.91666666,158.25,https://restcountries.eu/data/fsm.svg
+Fiji,Oceania,Suva,-18,175,https://restcountries.eu/data/fji.svg
+Finland,Europe,Helsinki,64,26,https://restcountries.eu/data/fin.svg
+France,Europe,Paris,46,2,https://restcountries.eu/data/fra.svg
+French Guiana,South America,Cayenne,4,-53,https://restcountries.eu/data/guf.svg
+Gabon,Africa,Libreville,-1,11.75,https://restcountries.eu/data/gab.svg
+Georgia,Eurasia,Tbilisi,42,43.5,https://restcountries.eu/data/geo.svg
+Germany,Europe,Berlin,51,9,https://restcountries.eu/data/deu.svg
+Ghana,Africa,Accra,8,-2,https://restcountries.eu/data/gha.svg
+Greece,Europe,Athens,39,22,https://restcountries.eu/data/grc.svg
+Greenland,North America,Nuuk,72,-40,https://restcountries.eu/data/grl.svg
+Grenada,North America,St. George's,12.11666666,-61.66666666,https://restcountries.eu/data/grd.svg
+Guadeloupe,North America,Basse-Terre,16.25,-61.583333,https://restcountries.eu/data/glp.svg
+Guatemala,North America,Guatemala City,15.5,-90.25,https://restcountries.eu/data/gtm.svg
+Guinea,Africa,Malabo,2,10,https://restcountries.eu/data/gnq.svg
+Guinea-Bissau,Africa,Bissau,12,-15,https://restcountries.eu/data/gnb.svg
+Guyana,South America,Georgetown,5,-59,https://restcountries.eu/data/guy.svg
+Haiti,North America,Port-au-Prince,19,-72.41666666,https://restcountries.eu/data/hti.svg
+Honduras,North America,Tegucigalpa,15,-86.5,https://restcountries.eu/data/hnd.svg
+Hungary,Europe,Budapest,47,20,https://restcountries.eu/data/hun.svg
+Iceland,Europe,Reykjavík,65,-18,https://restcountries.eu/data/isl.svg
+India,Asia,Diego Garcia,-6,71.5,https://restcountries.eu/data/iot.svg
+Indonesia,Asia,Jakarta,-5,120,https://restcountries.eu/data/idn.svg
+Iran,Asia,Tehran,32,53,https://restcountries.eu/data/irn.svg
+Iraq,Asia,Baghdad,33,44,https://restcountries.eu/data/irq.svg
+Israel,Asia,Jerusalem,31.5,34.75,https://restcountries.eu/data/isr.svg
+Italy,Europe,Rome,42.83333333,12.83333333,https://restcountries.eu/data/ita.svg
+Jamaica,North America,Kingston,18.25,-77.5,https://restcountries.eu/data/jam.svg
+Japan,Asia,Tokyo,36,138,https://restcountries.eu/data/jpn.svg
+Jordan,Asia,Amman,31,36,https://restcountries.eu/data/jor.svg
+Kazakhstan,Eurasia,Astana,48,68,https://restcountries.eu/data/kaz.svg
+Kenya,Africa,Nairobi,1,38,https://restcountries.eu/data/ken.svg
+Kiribati,Oceania,South Tarawa,1.41666666,173,https://restcountries.eu/data/kir.svg
+Kosovo,Europe,Pristina,42.666667,21.166667,https://restcountries.eu/data/kos.svg
+Kuwait,Asia,Kuwait City,29.5,45.75,https://restcountries.eu/data/kwt.svg
+Kyrgyzstan,Asia,Bishkek,41,75,https://restcountries.eu/data/kgz.svg
+Laos,Asia,Vientiane,18,105,https://restcountries.eu/data/lao.svg
+Latvia,Europe,Riga,57,25,https://restcountries.eu/data/lva.svg
+Lebanon,Asia,Beirut,33.83333333,35.83333333,https://restcountries.eu/data/lbn.svg
+Lesotho,Africa,Maseru,-29.5,28.5,https://restcountries.eu/data/lso.svg
+Liberia,Africa,Monrovia,6.5,-9.5,https://restcountries.eu/data/lbr.svg
+Libya,Africa,Tripoli,25,17,https://restcountries.eu/data/lby.svg
+Liechtenstein,Europe,Vaduz,47.26666666,9.53333333,https://restcountries.eu/data/lie.svg
+Lithuania,Europe,Vilnius,56,24,https://restcountries.eu/data/ltu.svg
+Luxembourg,Europe,Luxembourg,49.75,6.16666666,https://restcountries.eu/data/lux.svg
+Madagascar,Africa,Antananarivo,-20,47,https://restcountries.eu/data/mdg.svg
+Malawi,Africa,Lilongwe,-13.5,34,https://restcountries.eu/data/mwi.svg
+Malaysia,Asia,Kuala Lumpur,2.5,112.5,https://restcountries.eu/data/mys.svg
+Maldives,Asia,Malé,3.25,73,https://restcountries.eu/data/mdv.svg
+Mali,Africa,Bamako,17,-4,https://restcountries.eu/data/mli.svg
+Malta,Europe,Valletta,35.83333333,14.58333333,https://restcountries.eu/data/mlt.svg
+Marshall Islands,Oceania,Majuro,9,168,https://restcountries.eu/data/mhl.svg
+Martinique,North America,Fort-de-France,14.666667,-61,https://restcountries.eu/data/mtq.svg
+Mauritania,Africa,Nouakchott,20,-12,https://restcountries.eu/data/mrt.svg
+Mauritius,Africa,Port Louis,-20.28333333,57.55,https://restcountries.eu/data/mus.svg
+Mexico,North America,Mexico City,23,-102,https://restcountries.eu/data/mex.svg
+Moldova,Europe,Chișinău,47,29,https://restcountries.eu/data/mda.svg
+Monaco,Europe,Monaco,43.73333333,7.4,https://restcountries.eu/data/mco.svg
+Mongolia,Asia,Ulan Bator,46,105,https://restcountries.eu/data/mng.svg
+Montenegro,Europe,Podgorica,42.5,19.3,https://restcountries.eu/data/mne.svg
+Montserrat,North America,Plymouth,16.75,-62.2,https://restcountries.eu/data/msr.svg
+Morocco,Africa,Rabat,32,-5,https://restcountries.eu/data/mar.svg
+Mozambique,Africa,Maputo,-18.25,35,https://restcountries.eu/data/moz.svg
+Myanmar,Asia,Naypyidaw,22,98,https://restcountries.eu/data/mmr.svg
+Namibia,Africa,Windhoek,-22,17,https://restcountries.eu/data/nam.svg
+Nauru,Oceania,Yaren,-0.53333333,166.9166667,https://restcountries.eu/data/nru.svg
+Nepal,Asia,Kathmandu,28,84,https://restcountries.eu/data/npl.svg
+Netherlands,Europe,Amsterdam,52.5,5.75,https://restcountries.eu/data/nld.svg
+New Zealand,Oceania,Wellington,-41,174,https://restcountries.eu/data/nzl.svg
+Nicaragua,North America,Managua,13,-85,https://restcountries.eu/data/nic.svg
+Niger,Africa,Niamey,16,8,https://restcountries.eu/data/ner.svg
+Nigeria,Africa,Abuja,10,8,https://restcountries.eu/data/nga.svg
+Norway,Europe,Oslo,62,10,https://restcountries.eu/data/nor.svg
+Oman,Asia,Muscat,21,57,https://restcountries.eu/data/omn.svg
+Pakistan,Asia,Islamabad,30,70,https://restcountries.eu/data/pak.svg
+Palau,Oceania,Ngerulmud,7.5,134.5,https://restcountries.eu/data/plw.svg
+Panama,North America,Panama City,9,-80,https://restcountries.eu/data/pan.svg
+Papua New Guinea,Oceania,Port Moresby,-6,147,https://restcountries.eu/data/png.svg
+Paraguay,South America,Asunción,-23,-58,https://restcountries.eu/data/pry.svg
+Peru,South America,Lima,-10,-76,https://restcountries.eu/data/per.svg
+Philippines,Asia,Manila,13,122,https://restcountries.eu/data/phl.svg
+Poland,Europe,Warsaw,52,20,https://restcountries.eu/data/pol.svg
+Portugal,Europe,Lisbon,39.5,-8,https://restcountries.eu/data/prt.svg
+Puerto Rico,North America,San Juan,18.25,-66.5,https://restcountries.eu/data/pri.svg
+Qatar,Asia,Doha,25.5,51.25,https://restcountries.eu/data/qat.svg
+Republic of Ireland,Europe,Dublin,53,-8,https://restcountries.eu/data/irl.svg
+Romania,Europe,Bucharest,46,25,https://restcountries.eu/data/rou.svg
+Russia,Eurasia,Moscow,60,100,https://restcountries.eu/data/rus.svg
+Rwanda,Africa,Kigali,-2,30,https://restcountries.eu/data/rwa.svg
+Saba,North America,Kralendijk,12.15,-68.266667,https://restcountries.eu/data/bes.svg
+Saint Barthelemy,North America,Gustavia,18.5,-63.41666666,https://restcountries.eu/data/blm.svg
+Saint Kitts and Nevis,North America,Basseterre,17.33333333,-62.75,https://restcountries.eu/data/kna.svg
+Saint Lucia,North America,Castries,13.88333333,-60.96666666,https://restcountries.eu/data/lca.svg
+Saint Martin,North America,Marigot,18.08333333,-63.95,https://restcountries.eu/data/maf.svg
+Saint Pierre and Miquelon,North America,Saint-Pierre,46.83333333,-56.33333333,https://restcountries.eu/data/spm.svg
+Saint Vincent and the Grenadines,North America,Kingstown,13.25,-61.2,https://restcountries.eu/data/vct.svg
+Samoa,Oceania,Pago Pago,-14.33333333,-170,https://restcountries.eu/data/asm.svg
+San Marino,Europe,City of San Marino,43.76666666,12.41666666,https://restcountries.eu/data/smr.svg
+Saudi Arabia,Asia,Riyadh,25,45,https://restcountries.eu/data/sau.svg
+Senegal,Africa,Dakar,14,-14,https://restcountries.eu/data/sen.svg
+Serbia,Europe,Belgrade,44,21,https://restcountries.eu/data/srb.svg
+Seychelles,Africa,Victoria,-4.58333333,55.66666666,https://restcountries.eu/data/syc.svg
+Sierra Leone,Africa,Freetown,8.5,-11.5,https://restcountries.eu/data/sle.svg
+Singapore,Asia,Singapore,1.36666666,103.8,https://restcountries.eu/data/sgp.svg
+Sint Eustatius,North America,Kralendijk,12.15,-68.266667,https://restcountries.eu/data/bes.svg
+Sint Maarten,North America,Philipsburg,18.033333,-63.05,https://restcountries.eu/data/sxm.svg
+Slovakia,Europe,Bratislava,48.66666666,19.5,https://restcountries.eu/data/svk.svg
+Slovenia,Europe,Ljubljana,46.11666666,14.81666666,https://restcountries.eu/data/svn.svg
+Solomon Islands,Oceania,Honiara,-8,159,https://restcountries.eu/data/slb.svg
+Somalia,Africa,Mogadishu,10,49,https://restcountries.eu/data/som.svg
+South Africa,Africa,Pretoria,-29,24,https://restcountries.eu/data/zaf.svg
+South Georgia and the South Sandwich Islands,South America,King Edward Point,-54.5,-37,https://restcountries.eu/data/sgs.svg
+South Sudan,Africa,Juba,7,30,https://restcountries.eu/data/ssd.svg
+Spain,Europe,Madrid,40,-4,https://restcountries.eu/data/esp.svg
+Sri Lanka,Asia,Colombo,7,81,https://restcountries.eu/data/lka.svg
+Sudan,Africa,Juba,7,30,https://restcountries.eu/data/ssd.svg
+Suriname,South America,Paramaribo,4,-56,https://restcountries.eu/data/sur.svg
+Swaziland,Africa,Lobamba,-26.5,31.5,https://restcountries.eu/data/swz.svg
+Sweden,Europe,Stockholm,62,15,https://restcountries.eu/data/swe.svg
+Switzerland,Europe,Bern,47,8,https://restcountries.eu/data/che.svg
+Syria,Asia,Damascus,35,38,https://restcountries.eu/data/syr.svg
+Taiwan,Asia,Taipei,23.5,121,https://restcountries.eu/data/twn.svg
+Tajikistan,Asia,Dushanbe,39,71,https://restcountries.eu/data/tjk.svg
+Tanzania,Africa,Dodoma,-6,35,https://restcountries.eu/data/tza.svg
+Thailand,Asia,Bangkok,15,100,https://restcountries.eu/data/tha.svg
+The Bahamas,North America,Nassau,24.25,-76,https://restcountries.eu/data/bhs.svg
+The Gambia,Africa,Banjul,13.46666666,-16.56666666,https://restcountries.eu/data/gmb.svg
+Togo,Africa,Lomé,8,1.16666666,https://restcountries.eu/data/tgo.svg
+Tonga,Oceania,Nuku'alofa,-20,-175,https://restcountries.eu/data/ton.svg
+Trinidad and Tobago,North America,Port of Spain,11,-61,https://restcountries.eu/data/tto.svg
+Tunisia,Africa,Tunis,34,9,https://restcountries.eu/data/tun.svg
+Turkey,Eurasia,Ankara,39,35,https://restcountries.eu/data/tur.svg
+Turkmenistan,Asia,Ashgabat,40,60,https://restcountries.eu/data/tkm.svg
+Turks and Caicos,North America,Cockburn Town,21.75,-71.58333333,https://restcountries.eu/data/tca.svg
+Tuvalu,Oceania,Funafuti,-8,178,https://restcountries.eu/data/tuv.svg
+Uganda,Africa,Kampala,1,32,https://restcountries.eu/data/uga.svg
+Ukraine,Europe,Kiev,49,32,https://restcountries.eu/data/ukr.svg
+United Arab Emirates,Asia,Abu Dhabi,24,54,https://restcountries.eu/data/are.svg
+United Kingdom,Europe,London,54,-2,https://restcountries.eu/data/gbr.svg
+United States of America,North America,"Washington, D.C.",38,-97,https://restcountries.eu/data/usa.svg
+Uruguay,South America,Montevideo,-33,-56,https://restcountries.eu/data/ury.svg
+Uzbekistan,Asia,Tashkent,41,64,https://restcountries.eu/data/uzb.svg
+Vanuatu,Oceania,Port Vila,-16,167,https://restcountries.eu/data/vut.svg
+Venezuela,South America,Caracas,8,-66,https://restcountries.eu/data/ven.svg
+Vietnam,Asia,Hanoi,16.16666666,107.8333333,https://restcountries.eu/data/vnm.svg
+Western Sahara,Africa,El Aaiún,24.5,-13,https://restcountries.eu/data/esh.svg
+Yemen,Asia,Sana'a,15,48,https://restcountries.eu/data/yem.svg
+Zambia,Africa,Lusaka,-15,30,https://restcountries.eu/data/zmb.svg
+Zimbabwe,Africa,Harare,-20,30,https://restcountries.eu/data/zwe.svg
