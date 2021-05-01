@@ -42,6 +42,7 @@ if game_option == "Learn":
     ))
 
 if game_option == "Quiz":
+    st.title("Georgraphy Quiz!")
     random_row = get_random_row_from_file()
     country = random_row[0]
     continent = random_row[1]
