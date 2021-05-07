@@ -6,6 +6,7 @@ from streamlit import caching
 from streamlit.script_runner import RerunException
 from streamlit.script_request_queue import RerunData
 import pydeck as pdk
+import wikipedia
 
 @st.cache
 def load_country_details():
@@ -46,6 +47,8 @@ if game_option == "Learn":
 
     st.text("Continent: " + continent)
     st.text("Capital: " + capital)
+
+    st.write(wikipedia.summary(country, sentences = 4))
 
     st.pydeck_chart(pdk.Deck(
     map_style='mapbox://styles/mapbox/light-v9',
