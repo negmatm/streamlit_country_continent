@@ -6,6 +6,7 @@ from streamlit import caching
 from streamlit.script_runner import RerunException
 from streamlit.script_request_queue import RerunData
 import pydeck as pdk
+import wikipedia
 
 @st.cache
 def load_country_details():
@@ -16,7 +17,18 @@ def get_random_row_from_file():
     random_number = math.floor((random.random()) * len(country_details))
     return list(country_details.iloc[random_number])
 
+@st.cache(allow_output_mutation=True)
+def get_four_random_capitals():
+    four_random_capitals = set()
+
+    for _ in range(4):
+        random_number = math.floor((random.random()) * len(capital_list))
+        four_random_capitals.add(capital_list[random_number])
+
+    return four_random_capitals
+
 country_details = load_country_details()
+capital_list = list(country_details["capital"])
 
 game_option = st.sidebar.radio("Choose game option",("Learn", "Quiz"))
 st.sidebar.title("About")
@@ -36,6 +48,8 @@ if game_option == "Learn":
     st.text("Continent: " + continent)
     st.text("Capital: " + capital)
 
+    st.write(wikipedia.summary(country, sentences = 4))
+
     st.pydeck_chart(pdk.Deck(
     map_style='mapbox://styles/mapbox/light-v9',
     initial_view_state=pdk.ViewState(latitude=latitude,longitude=longitude,zoom=5)
@@ -54,15 +68,15 @@ if game_option == "Quiz":
     quiz_option = st.radio("Choose quiz option",("Continent", "Capital"))
 
     if quiz_option == "Continent":
-        st.subheader("What continent is " + country + " on ?")
+        st.subheader("What continent is " + country + " on?")
 
         chosen_continent = st.radio("",("Africa", "Asia", "Europe", "Eurasia", "North America", "South America", "Oceania"))
 
         if st.button("Submit your answer"):
             if chosen_continent == continent:
-                caching.clear_cache()
                 st.write("This is correct!")
                 st.balloons()
+                caching.clear_cache()
             else:
                 st.warning("This is not correct.  Try again!")
 
@@ -83,13 +97,17 @@ if game_option == "Quiz":
     elif quiz_option == "Capital":
         st.subheader("What is the capital of " + country + "?")
 
-        entered_capital = st.text_input("Enter Capital")
+        capital_choices = get_four_random_capitals()
+        capital_choices.add(capital)
+        capital_choices = sorted(list(capital_choices))
+
+        chosen_capital = st.selectbox("Choose a capital", capital_choices)
 
         if st.button("Submit your answer"):
-            if entered_capital == capital:
-                caching.clear_cache()
+            if chosen_capital == capital:
                 st.write("This is correct!")
                 st.balloons()
+                caching.clear_cache()
             else:
                 st.warning("This is not correct.  Try again!")
 
