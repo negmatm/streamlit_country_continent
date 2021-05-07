@@ -6,7 +6,6 @@ from streamlit import caching
 from streamlit.script_runner import RerunException
 from streamlit.script_request_queue import RerunData
 import pydeck as pdk
-import wikipedia as wkp
 
 @st.cache
 def load_country_details():
