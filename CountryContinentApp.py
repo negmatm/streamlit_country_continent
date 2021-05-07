@@ -18,14 +18,14 @@ def get_random_row_from_file():
     return list(country_details.iloc[random_number])
 
 @st.cache(allow_output_mutation=True)
-def get_four_random_capitals():
-    four_random_capitals = set()
+def get_random_capitals(how_many):
+    random_capitals = set()
 
-    for _ in range(4):
+    for _ in range(how_many):
         random_number = math.floor((random.random()) * len(capital_list))
-        four_random_capitals.add(capital_list[random_number])
+        random_capitals.add(capital_list[random_number])
 
-    return four_random_capitals
+    return random_capitals
 
 country_details = load_country_details()
 capital_list = list(country_details["capital"])
@@ -97,11 +97,11 @@ if game_option == "Quiz":
     elif quiz_option == "Capital":
         st.subheader("What is the capital of " + country + "?")
 
-        capital_choices = get_four_random_capitals()
+        capital_choices = get_random_capitals(3)
         capital_choices.add(capital)
         capital_choices = sorted(list(capital_choices))
 
-        chosen_capital = st.selectbox("Choose a capital", capital_choices)
+        chosen_capital = st.radio("Choose a capital", capital_choices)
 
         if st.button("Submit your answer"):
             if chosen_capital == capital:
