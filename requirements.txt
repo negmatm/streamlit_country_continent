@@ -1,0 +1,7 @@
+
+Streamlit
+math
+pandas
+random
+pydeck
+wikipedia
